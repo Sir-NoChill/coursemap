@@ -4,7 +4,7 @@ import json
 
 script_path = os.path.abspath(__file__)
 folder_path = os.path.dirname(script_path)
-data_path = os.path.join(folder_path,"data.xlsx")
+data_path = os.path.join(folder_path,"data.xlsx")  # data to be parsed
 xls = pandas.ExcelFile(data_path)
 data = {}
 for sheet_name in xls.sheet_names:
