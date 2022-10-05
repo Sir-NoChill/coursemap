@@ -11,7 +11,8 @@ d3.json("data/data.json").then(function(data) {
   var xcoord = x => x * scale + width / 2;
   var ycoord = y => height - y * scale - 1.5*scale;
   var svg = d3.select("#course-map svg").attr("width",width).attr("height",height);
-  var highlightColor1 = "rgb(0, 85, 183)";
+  // The highlight colour for the course paths
+  var highlightColor1 = "rgb(255, 85, 183)";
 
   var requisiteLines = svg.append("g");
   var courseNodes = svg.append("g");
